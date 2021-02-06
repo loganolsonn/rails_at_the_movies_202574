@@ -1,3 +1,5 @@
+<% content_for(:html_title) { @movie.title } %>
+
 <h2 class="title is-2"><%= @movie.title %></h2>
 
 <progress id="progress is-info" value="<%= @movie.average_vote %>" max="10"><%= @movie.average_vote %></progress>
